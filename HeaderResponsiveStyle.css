@@ -1,0 +1,206 @@
+/*General Setup */
+html{
+	background: url("Images/Background picture-final.png"), #CCE5FF;
+	background-attachment: fixed;
+	font-size: 16px;
+}
+body{
+	margin: 0 auto;
+}
+img{
+	max-width: 100%;
+}
+
+
+/*Typography */
+h1{
+	color: #9d312e;
+	font-family: "Lucida Handwriting", cursive;
+	text-align: center;
+	background-color: #fefff4;
+	border: thick double #9d312e;
+	box-shadow: 1px 2px 3px 2px rgba(0, 0, 0, 0.14);
+	}
+.big_sub_header{
+	font-family: "Courier New", serif;
+	text-decoration: underline;
+}
+h2.big_sub_header{
+	text-align: center;
+	text-decoration: none;
+	margin-bottom: 2.5rem;
+		font-size:1.8rem;
+}
+main ul, ol{
+	line-height: 1.4rem;
+}
+#small_sub_header{
+	font-family: "Courier New", serif;
+	font-weight: bold;
+	text-decoration: underline;
+	color: #FFB266;
+	font-size: 1.2em;
+}
+	
+/* Header Layout */
+
+nav{
+	display:flex;
+	justify-content: space-between;
+}
+.searchHolder{
+	background: #9d312e;
+	display: flex;
+	padding: 10px;
+	align-items: center;
+	height: min-content;
+	box-shadow: 1px 2px 3px 2px rgba(0, 0, 0, 0.14);
+}
+.main-nav{
+	list-style-type: none;
+	margin-top: 0
+}
+.main-nav li{
+	color: white;
+	font-size: 1.3rem;
+	
+}
+.main-nav li:nth-child(2){
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	background: #591816;
+	padding: 10px 20px 10px 20px;
+	box-sizing: border-box;
+}
+
+#searchbar{
+	background: #9d312e;
+	color: white;
+	height: min-content;
+	font-size: 1.3rem;
+}
+#search{
+	margin-left: 5px;
+	height: min-content;
+}
+.main-nav a{
+	color: white;
+	text-decoration: none;
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	background: #9d312e;
+	padding: 10px 20px 10px 20px;
+	box-sizing: border-box;	
+	box-shadow: 1px 2px 3px 2px rgba(0, 0, 0, 0.14);
+	}
+.main-nav a:hover{
+	background-color: #591816;
+		
+}
+/* Main Layout */
+
+main{
+	margin: 6rem 2rem 3rem 2rem;
+}
+
+dt{
+	background-color: #9d312e;
+	color: white;
+	font-family: "Lucida Handwriting", cursive;
+	margin-bottom: 1rem;
+	font-size: 2rem;
+	padding-left: 3rem;
+}
+
+dd a{
+	text-decoration: none;
+	color: black;
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	padding: 0.5rem;
+}
+dd{
+	background-color: #fefff4;
+	margin-bottom: 1rem;
+}
+dd a .Index_Img{
+	grid-column: 1;
+	border: 1px solid black;
+}
+dd a .Index_flex{
+	grid-column: 2;
+	display: flex;
+	flex-direction: column;
+}
+dd a .Index_title{
+	font-family: "Courier New", serif;
+	padding-left:0.7rem;
+	margin: 0;
+	flex: 1;
+}
+dd a .Index_fluff{
+	flex: 1;
+	line-height:1.3rem;
+	font-size: 1.1rem;
+	font-style: italic;
+	margin: 0;
+	padding-left: 1rem;
+}
+dd a .Index_Keywords{
+	flex: 1;
+	font-family: "Courier New", serif;
+	margin-top: 0.5rem;
+	padding-left: 1rem;
+}
+dd a:visited{
+		color: black;
+}	
+	/* Footer Layout */
+footer{ 
+		border-top: 2px solid white;
+		color: white;
+		
+}
+@media screen and (max-width: 799px){
+	body{
+		width: 80%;
+	}
+	h1{
+		font-size: 2.1rem;
+		padding: 1rem;
+		margin-bottom: 2rem;
+	}
+	.main-nav li{
+		margin-top: 10px;
+	}
+	.main-nav{
+		padding: 0;
+		display: flex;
+		flex-flow: column;
+	}
+	.searchHolder{
+		justify-content: center;
+	}
+	nav{flex-flow: column-reverse;
+	}
+}
+@media screen and (min-width: 800px){
+	.searchHolder{
+		margin-right: 40px;
+	}
+	.main-nav li{
+		display: inline-block;
+		margin-right: 1rem;
+	}
+	h1{
+		font-size: 3rem;
+		padding: 3rem;
+		margin-bottom: 0.5rem;
+	}
+	body{
+		width: 60%;
+		min-width: 800px;
+	}
+	
